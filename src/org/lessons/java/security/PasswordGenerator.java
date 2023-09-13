@@ -19,6 +19,8 @@ public class PasswordGenerator {
 		System.out.print("Scrivi il tuo colore preferito: ");
 		String userPrefColor = scanner.nextLine();
 		
+		scanner.close();
+		
 		System.out.print("Inserisci il tuo giorno di nascita: ");
 		int dayDOB = scanner.nextInt();
 		
