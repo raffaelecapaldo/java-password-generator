@@ -31,8 +31,9 @@ public class PasswordGenerator {
 
 		scanner.close();
 
+		int sumDOB = dayDOB + monthDOB + yearDOB;
 		
-		String generatedPswd = userName + "-" + userSurname + "-" + userPrefColor + "-" + yearDOB; 
+		String generatedPswd = userName + "-" + userSurname + "-" + userPrefColor + "-" + sumDOB; 
 		System.out.print("La tua password NON sicura è: " + generatedPswd);
 
 
