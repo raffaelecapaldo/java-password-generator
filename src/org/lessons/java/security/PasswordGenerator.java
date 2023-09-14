@@ -19,7 +19,6 @@ public class PasswordGenerator {
 		System.out.print("Scrivi il tuo colore preferito: ");
 		String userPrefColor = scanner.nextLine();
 		
-		scanner.close();
 		
 		System.out.print("Inserisci il tuo giorno di nascita: ");
 		int dayDOB = scanner.nextInt();
@@ -29,6 +28,9 @@ public class PasswordGenerator {
 
 		System.out.print("Inserisci il tuo anno di nascita: ");
 		int yearDOB = scanner.nextInt();
+
+		scanner.close();
+
 		
 		String generatedPswd = userName + "-" + userSurname + "-" + userPrefColor + "-" + yearDOB; 
 		System.out.print("La tua password NON sicura è: " + generatedPswd);
